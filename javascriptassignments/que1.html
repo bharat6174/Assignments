@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var courses = ["Java", "Angular", "HTML", "Python"];
+        var username = prompt("Enter your name: ");
+        var courseName = prompt("Please enter the name of the course: ");
+        var courseFound = false;
+        document.write("Welcome " + username + "<br>")
+        document.write(" " + "<br>")
+
+        for (var i = 0; i < courses.length; i++) {
+            if (courseName.toLowerCase() === courses[i].toLowerCase()) {
+                document.write("You have selected " + courseName + "<br>");
+                document.write("The course fee is 2000." + "<br>");
+                courseFound = true;
+                break;
+            }
+
+        }
+        if (!courseFound) {
+            document.write("The selected course is not available." + "<br>");
+        }
+    </script>
+</body>
+
+</html>

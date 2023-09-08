@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <strong>Comments: </strong><textarea id="comments" onkeyup="printMessage()" rows="10" columns = "50"></textarea>
+    <div id="mydiv" style="background-color: rgb(53, 172, 212);"></div>
+
+    <script>
+        function printMessage() {
+            var comment = document.getElementById("comments").value;
+            var divElement = document.getElementById("mydiv");
+            divElement.innerHTML = comment;
+        }
+    </script>
+</body>
+</html>
